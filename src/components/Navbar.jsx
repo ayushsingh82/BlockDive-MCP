@@ -18,7 +18,7 @@ function Navbar() {
     <nav>
       <div className='flex flex-row mx-auto px-[40px] py-[25px] justify-between items-center mt-[0px] bg-black'>
         <div className='font-semibold text-2xl text-green-500'>
-          <a href='/'>BlockDive</a>
+          <a href='/'>BlockDive-MCP</a>
         </div>
      
 

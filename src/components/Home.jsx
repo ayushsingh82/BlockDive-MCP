@@ -32,40 +32,104 @@ function BackgroundBeamsDemo() {
           >
             {/* Optimism Logo */}
             <img
-              src="https://www.optimism.io/optimism.svg"
+              src="https://assets-global.website-files.com/611dbb3c82f69d2ae6cdc7f3/611dbb3c82f69d2ae6cdc7f3_Optimism%20Logo.svg"
               alt="Optimism Logo"
               className="h-12 w-36"
+              onError={(e) => {
+                e.target.onerror = null;
+                e.target.src = "https://assets-global.website-files.com/611dbb3c82f69d2ae6cdc7f3/611dbb3c82f69d2ae6cdc7f3_Optimism%20Logo.svg";
+              }}
             />
             {/* Base Logo */}
             <img
-              src="https://www.base.org/_next/static/media/logo.f6fdedfc.svg"
+              src="https://base.org/images/base-logo.svg"
               alt="Base Logo"
               className="h-12 w-auto"
+              onError={(e) => {
+                e.target.onerror = null;
+                e.target.src = "https://base.org/images/base-logo.svg";
+              }}
             />
             {/* Ethereum Logo */}
             <img
-              src="https://cryptologos.cc/logos/ethereum-eth-logo.svg?v=024"
+              src="https://upload.wikimedia.org/wikipedia/commons/0/05/Ethereum_logo_2014.svg"
               alt="Ethereum Logo"
               className="h-12 w-auto"
+              onError={(e) => {
+                e.target.onerror = null;
+                e.target.src = "https://upload.wikimedia.org/wikipedia/commons/0/05/Ethereum_logo_2014.svg";
+              }}
             />
             {/* Aptos Logo */}
             <img
-              src="https://cryptologos.cc/logos/aptos-apt-logo.svg?v=024"
+              src="https://aptoslabs.com/images/aptos-logo.svg"
               alt="Aptos Logo"
-              className="h-12 w-auto "
-              style={{ filter: 'invert(1)' }} 
-            />
-            {/* Arbitrum Logo */}
-            <img
-              src="https://cryptologos.cc/logos/arbitrum-arb-logo.svg?v=024"
-              alt="Arbitrum Logo"
               className="h-12 w-auto"
+              style={{ filter: 'invert(1)' }}
+              onError={(e) => {
+                e.target.onerror = null;
+                e.target.src = "https://aptoslabs.com/images/aptos-logo.svg";
+              }}
+            />
+            {/* Solana Logo */}
+            <img
+              src="https://solana.com/src/img/branding/solanaLogoMark.svg"
+              alt="Solana Logo"
+              className="h-12 w-auto"
+              onError={(e) => {
+                e.target.onerror = null;
+                e.target.src = "https://solana.com/src/img/branding/solanaLogoMark.svg";
+              }}
+            />
+            {/* Avalanche Logo */}
+            <img
+              src="https://cryptologos.cc/logos/avalanche-avax-logo.svg"
+              alt="Avalanche Logo"
+              className="h-12 w-auto"
+              onError={(e) => {
+                e.target.onerror = null;
+                e.target.src = "https://cryptologos.cc/logos/avalanche-avax-logo.svg";
+              }}
+            />
+            {/* BNB Chain Logo */}
+            <img
+              src="https://cryptologos.cc/logos/bnb-bnb-logo.svg"
+              alt="BNB Chain Logo"
+              className="h-12 w-auto"
+              onError={(e) => {
+                e.target.onerror = null;
+                e.target.src = "https://cryptologos.cc/logos/bnb-bnb-logo.svg";
+              }}
+            />
+            {/* Tron Logo */}
+            <img
+              src="https://cryptologos.cc/logos/tron-trx-logo.svg"
+              alt="Tron Logo"
+              className="h-12 w-auto"
+              onError={(e) => {
+                e.target.onerror = null;
+                e.target.src = "https://cryptologos.cc/logos/tron-trx-logo.svg";
+              }}
             />
             {/* Polygon Logo */}
             <img
-              src="https://cryptologos.cc/logos/polygon-matic-logo.svg?v=024"
+              src="https://cryptologos.cc/logos/polygon-matic-logo.svg"
               alt="Polygon Logo"
               className="h-12 w-auto"
+              onError={(e) => {
+                e.target.onerror = null;
+                e.target.src = "https://cryptologos.cc/logos/polygon-matic-logo.svg";
+              }}
+            />
+            {/* Arbitrum Logo */}
+            <img
+              src="https://cryptologos.cc/logos/arbitrum-arb-logo.svg"
+              alt="Arbitrum Logo"
+              className="h-12 w-auto"
+              onError={(e) => {
+                e.target.onerror = null;
+                e.target.src = "https://cryptologos.cc/logos/arbitrum-arb-logo.svg";
+              }}
             />
           </motion.div>
         </div>
@@ -106,7 +170,7 @@ const TypewriterEffectSmoothDemo = () => {
             text: "with",
         },
         {
-            text: "BlockDive.",
+            text: "BlockDive-MCP.",
             className: "text-green-500 dark:text-green-500",
         },
     ];
