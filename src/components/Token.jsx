@@ -131,6 +131,19 @@ const Token = () => {
 
   return (
     <div className="flex flex-col items-center bg-black min-h-screen">
+      {/* H1 Header */}
+      <h1 className="text-4xl font-bold text-green-400 mt-8 mb-4 text-center">
+        Token Explorer
+      </h1>
+      
+      {/* Flow Explanation */}
+      <div className="text-gray-300 text-center max-w-2xl mx-auto px-4 mb-8">
+        <p className="text-sm leading-relaxed">
+          <strong>How this MCP works :</strong> Enter an Ethereum wallet address below to fetch all ERC-20 tokens owned by that account. 
+          The API connects to Nodit's Web3 Data API, queries the Ethereum mainnet, and returns token details including name, symbol, 
+          decimals, and balance. <strong>Input needed:</strong> A valid Ethereum wallet address (0x format, 42 characters).
+        </p>
+      </div>
      
       <div style={gradientStyle} className="mt-[20px]">
         <input

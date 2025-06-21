@@ -73,6 +73,20 @@ const Arbitrum = () => {
 
   return (
     <div className="flex flex-col items-center justify-center min-h-screen bg-black">
+      {/* H1 Header */}
+      <h1 className="text-4xl font-bold text-green-400 mt-8 mb-4 text-center">
+        Arbitrum Blockchain Explorer
+      </h1>
+      
+      {/* Flow Explanation */}
+      <div className="text-gray-300 text-center max-w-2xl mx-auto px-4 mb-8">
+        <p className="text-sm leading-relaxed">
+          <strong>How this MCP works :</strong> Select an RPC method to interact with the Arbitrum blockchain. The API connects to Nodit's 
+          Arbitrum RPC node, executes the selected method, and returns blockchain data including block numbers, gas estimates, 
+          block details, and transaction logs. <strong>Input needed:</strong> RPC method selection and method-specific parameters.
+        </p>
+      </div>
+    
       <div
         className="bg-black p-8 rounded shadow-md w-full max-w-lg border-4"
         style={{

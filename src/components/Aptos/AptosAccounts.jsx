@@ -91,6 +91,20 @@ const AptosAccounts = () => {
 
   return (
     <div className="flex flex-col items-center justify-center min-h-screen bg-black">
+      {/* H1 Header */}
+      <h1 className="text-4xl font-bold text-green-400 mt-8 mb-4 text-center absolute top-8 left-1/2 transform -translate-x-1/2">
+        Aptos Account Data Explorer
+      </h1>
+      
+      {/* Flow Explanation */}
+      <div className="text-gray-300 text-center max-w-2xl mx-auto px-4 mb-8 absolute top-24 left-1/2 transform -translate-x-1/2">
+        <p className="text-sm leading-relaxed">
+          <strong>How this MCP works:</strong> Enter an Aptos account address and select the type of data to fetch including account data, 
+          module data, modules list, and resources. The API connects to Nodit's Aptos Indexer API and returns comprehensive account 
+          information from the Aptos blockchain. <strong>Input needed:</strong> Valid Aptos account address and data type selection.
+        </p>
+      </div>
+    
       <div
         className="bg-black p-8 rounded-lg w-full max-w-3xl border-4 border-transparent"
         style={{ borderImage: 'linear-gradient(90deg, #32CD32, #006400, #1E90FF, #8A2BE2) 1' }}

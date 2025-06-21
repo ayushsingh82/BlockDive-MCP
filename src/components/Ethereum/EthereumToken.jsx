@@ -119,6 +119,20 @@ const EthereumToken = () => {
 
   return (
     <div className="min-h-screen bg-black flex items-center justify-center">
+      {/* H1 Header */}
+      <h1 className="text-4xl font-bold text-green-400 mt-8 mb-4 text-center absolute top-8 left-1/2 transform -translate-x-1/2">
+        Ethereum Token API Explorer
+      </h1>
+      
+      {/* Flow Explanation */}
+      <div className="text-gray-300 text-center max-w-2xl mx-auto px-4 mb-8 absolute top-24 left-1/2 transform -translate-x-1/2">
+        <p className="text-sm leading-relaxed">
+          <strong>How this MCP works:</strong> Select from various Ethereum token-related API calls including native balance, token metadata, 
+          holders, transfers, and ownership. The API connects to Nodit's Web3 Data API for Ethereum mainnet and returns comprehensive 
+          token data. <strong>Input needed:</strong> API call type selection and corresponding address (account or contract).
+        </p>
+      </div>
+    
       <div
         className="p-8 rounded-lg border-4 border-transparent bg-clip-padding max-w-3xl w-full"
         style={{ borderImage: 'linear-gradient(90deg, #FF0080, #7928CA) 1' }}

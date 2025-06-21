@@ -94,6 +94,20 @@ const ApiExplorer = () => {
 
   return (
     <div className="flex flex-col items-center justify-center min-h-screen bg-black">
+      {/* H1 Header */}
+      <h1 className="text-4xl font-bold text-green-400 mt-8 mb-4 text-center">
+        Multi-Chain API Explorer
+      </h1>
+      
+      {/* Flow Explanation */}
+      <div className="text-gray-300 text-center max-w-2xl mx-auto px-4 mb-8">
+        <p className="text-sm leading-relaxed">
+          <strong>How this MCP works :</strong> Select a blockchain network and RPC method to interact with different blockchains. 
+          The API connects to Nodit's RPC nodes for each network, executes the selected method, and returns blockchain data in real-time. 
+          <strong>Input needed:</strong> Network selection, RPC method, and method-specific parameters (addresses, block hashes, etc.).
+        </p>
+      </div>
+    
     <div
       className="bg-black p-8 rounded shadow-md w-full max-w-lg border-4"
       style={{

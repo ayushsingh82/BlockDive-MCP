@@ -116,6 +116,19 @@ const NFTPage = () => {
 
   return (
     <div className="flex flex-col items-center bg-black min-h-screen">
+      {/* H1 Header */}
+      <h1 className="text-4xl font-bold text-green-400 mt-8 mb-4 text-center">
+        NFT Explorer
+      </h1>
+      
+      {/* Flow Explanation */}
+      <div className="text-gray-300 text-center max-w-2xl mx-auto px-4 mb-8">
+        <p className="text-sm leading-relaxed">
+          <strong>How this MCP works :</strong> Enter an Ethereum wallet address below to fetch all NFTs (ERC-721/ERC-1155) owned by that account. 
+          The API connects to Nodit's Web3 Data API, queries the Ethereum mainnet with metadata enabled, and returns NFT details including 
+          contract name, symbol, and token ID. <strong>Input needed:</strong> A valid Ethereum wallet address (0x format, 42 characters).
+        </p>
+      </div>
      
       <input
         type="text"
