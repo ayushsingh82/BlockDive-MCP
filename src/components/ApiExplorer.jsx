@@ -16,6 +16,9 @@ const ApiExplorer = () => {
     arbitrum: 'https://arbitrum-mainnet.nodit.io/',
     optimism: 'https://optimism-mainnet.nodit.io/',
     ethereum: 'https://ethereum-mainnet.nodit.io/',
+    bnb: 'https://bsc-mainnet.nodit.io/',
+    xrpl: 'https://xrpl-mainnet.nodit.io/',
+    tron: 'https://tron-mainnet.nodit.io/',
   };
 
   const handleSubmit = async (e) => {
@@ -129,6 +132,9 @@ const ApiExplorer = () => {
               <option value="arbitrum">Arbitrum</option>
               <option value="optimism">Optimism</option>
               <option value="ethereum">Ethereum</option>
+              <option value="bnb">BNB</option>
+              <option value="xrpl">XRPL</option>
+              <option value="tron">Tron</option>
             </select>
           </div>
 
