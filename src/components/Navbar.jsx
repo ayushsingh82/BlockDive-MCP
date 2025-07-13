@@ -9,9 +9,25 @@ const gradientStyle = {
 
 function Navbar() {
   const [dropdownOpen, setDropdownOpen] = useState(false);
+  const [analyticsDropdownOpen, setAnalyticsDropdownOpen] = useState(false);
+  const [aiDropdownOpen, setAiDropdownOpen] = useState(false);
 
   const toggleDropdown = () => {
     setDropdownOpen(!dropdownOpen);
+    setAnalyticsDropdownOpen(false);
+    setAiDropdownOpen(false);
+  };
+
+  const toggleAnalyticsDropdown = () => {
+    setAnalyticsDropdownOpen(!analyticsDropdownOpen);
+    setDropdownOpen(false);
+    setAiDropdownOpen(false);
+  };
+
+  const toggleAiDropdown = () => {
+    setAiDropdownOpen(!aiDropdownOpen);
+    setDropdownOpen(false);
+    setAnalyticsDropdownOpen(false);
   };
 
   return (
@@ -21,20 +37,59 @@ function Navbar() {
           <a href='/'>BlockDive-MCP</a>
         </div>
      
+        <div className='flex gap-4'>
+          {/* Analytics Dropdown */}
+          <div className='relative'>
+            <button
+              onClick={toggleAnalyticsDropdown}
+              className='bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600'
+            >
+              Analytics
+            </button>
+            {analyticsDropdownOpen && (
+              <div className='absolute right-0 mt-2 w-48 bg-white rounded-md shadow-lg z-50'>
+                <a href='/analytics' className='block px-4 py-2 text-black hover:bg-gray-200'>
+                  Token Analytics
+                </a>
+                <a href='/leaderboards' className='block px-4 py-2 text-black hover:bg-gray-200'>
+                  Leaderboards
+                </a>
+              </div>
+            )}
+          </div>
 
+          {/* AI Dropdown */}
+          <div className='relative'>
+            <button
+              onClick={toggleAiDropdown}
+              className='bg-purple-500 text-white px-4 py-2 rounded-md hover:bg-purple-600'
+            >
+              AI Insights
+            </button>
+            {aiDropdownOpen && (
+              <div className='absolute right-0 mt-2 w-48 bg-white rounded-md shadow-lg z-50'>
+                <a href='/ai-insights' className='block px-4 py-2 text-black hover:bg-gray-200'>
+                  AI Analysis
+                </a>
+                <a href='/enhanced-suggestions' className='block px-4 py-2 text-black hover:bg-gray-200'>
+                  Token Suggestions
+                </a>
+              </div>
+            )}
+          </div>
 
-          {/* Dropdown button */}
+          {/* Original Dropdown */}
           <div className='relative justify-end'>
             <button
               onClick={toggleDropdown}
-              className='bg-green-500 text-white px-4 py-2 rounded-md'
+              className='bg-green-500 text-white px-4 py-2 rounded-md hover:bg-green-600'
             >
               Get Started
             </button>
 
             {/* Dropdown Menu */}
             {dropdownOpen && (
-              <div className='absolute right-0 mt-2 w-48 bg-white rounded-md shadow-lg z-50'> {/* Increased z-index */}
+              <div className='absolute right-0 mt-2 w-48 bg-white rounded-md shadow-lg z-50'>
                 <a href='/token' className='block px-4 py-2 text-black hover:bg-gray-200'>
                   Tokens
                 </a>
@@ -60,11 +115,12 @@ function Navbar() {
                   Arbitrum
                 </a>
                 <a href='/explorer' className='block px-4 py-2 text-black hover:bg-gray-200'>
-                  Mutichain
+                  Multichain
                 </a>
               </div>
             )}
           </div>
+        </div>
       </div>
       <div style={gradientStyle} />
     </nav>

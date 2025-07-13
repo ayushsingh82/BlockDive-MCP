@@ -15,6 +15,10 @@ import Base from './components/Base.jsx'
 import Arbitrum from './components/Arbitrum.jsx'
 import EthereumToken from './components/Ethereum/EthereumToken.jsx'
 import ApiExplorer from './components/ApiExplorer.jsx'
+import TokenAnalytics from './components/DataVisualization/TokenAnalytics.jsx'
+import Leaderboards from './components/DataVisualization/Leaderboards.jsx'
+import AIInsights from './components/AI/AIInsights.jsx'
+import EnhancedSuggestions from './components/MCP/EnhancedSuggestions.jsx'
 
 import '@rainbow-me/rainbowkit/styles.css';
 
@@ -57,6 +61,10 @@ const router = createBrowserRouter(
      <Route path='/base' element={<Base/>}/>
      <Route path='/arbitrum' element={<Arbitrum/>}/>
      <Route path='/explorer' element={<ApiExplorer/>}/>
+     <Route path='/analytics' element={<TokenAnalytics/>}/>
+     <Route path='/leaderboards' element={<Leaderboards/>}/>
+     <Route path='/ai-insights' element={<AIInsights/>}/>
+     <Route path='/enhanced-suggestions' element={<EnhancedSuggestions/>}/>
     </Route>
   )
 )
