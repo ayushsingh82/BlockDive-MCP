@@ -80,6 +80,9 @@ function Navbar() {
                 <a href='/enhanced-suggestions' className='block px-4 py-2 text-black hover:bg-gray-200'>
                   Token Suggestions
                 </a>
+                <a href='/portfolio-analyzer' className='block px-4 py-2 text-black hover:bg-gray-200'>
+                  Portfolio Analyzer
+                </a>
               </div>
             )}
           </div>

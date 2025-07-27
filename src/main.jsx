@@ -21,6 +21,7 @@ import AIInsights from './components/AI/AIInsights.jsx'
 import EnhancedSuggestions from './components/MCP/EnhancedSuggestions.jsx'
 import TopPerformers from './components/Trading/TopPerformers.jsx'
 import TradingAssistant from './components/Trading/TradingAssistant.jsx'
+import PortfolioAnalyzer from './components/AI/PortfolioAnalyzer.jsx'
 
 import '@rainbow-me/rainbowkit/styles.css';
 
@@ -69,6 +70,7 @@ const router = createBrowserRouter(
      <Route path='/enhanced-suggestions' element={<EnhancedSuggestions/>}/>
      <Route path='/top-performers' element={<TopPerformers/>}/>
      <Route path='/trading-assistant' element={<TradingAssistant/>}/>
+     <Route path='/portfolio-analyzer' element={<PortfolioAnalyzer/>}/>
     </Route>
   )
 )
