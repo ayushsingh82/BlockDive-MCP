@@ -19,6 +19,8 @@ import TokenAnalytics from './components/DataVisualization/TokenAnalytics.jsx'
 import Leaderboards from './components/DataVisualization/Leaderboards.jsx'
 import AIInsights from './components/AI/AIInsights.jsx'
 import EnhancedSuggestions from './components/MCP/EnhancedSuggestions.jsx'
+import TopPerformers from './components/Trading/TopPerformers.jsx'
+import TradingAssistant from './components/Trading/TradingAssistant.jsx'
 
 import '@rainbow-me/rainbowkit/styles.css';
 
@@ -65,6 +67,8 @@ const router = createBrowserRouter(
      <Route path='/leaderboards' element={<Leaderboards/>}/>
      <Route path='/ai-insights' element={<AIInsights/>}/>
      <Route path='/enhanced-suggestions' element={<EnhancedSuggestions/>}/>
+     <Route path='/top-performers' element={<TopPerformers/>}/>
+     <Route path='/trading-assistant' element={<TradingAssistant/>}/>
     </Route>
   )
 )
