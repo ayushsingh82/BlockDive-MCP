@@ -54,6 +54,12 @@ function Navbar() {
                 <a href='/leaderboards' className='block px-4 py-2 text-black hover:bg-gray-200'>
                   Leaderboards
                 </a>
+                <a href='/top-performers' className='block px-4 py-2 text-black hover:bg-gray-200'>
+                  Top Performers
+                </a>
+                <a href='/trading-assistant' className='block px-4 py-2 text-black hover:bg-gray-200'>
+                  Trading Assistant
+                </a>
               </div>
             )}
           </div>
